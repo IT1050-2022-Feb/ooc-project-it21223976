@@ -9,6 +9,7 @@
 #include "Staff.h"
 #include "BusSchedule.h"
 using namespace std;
+
 int main()
 {
 	UnRegisteredCustomer*UnRegCustomer;
@@ -23,20 +24,21 @@ int main()
 	BusInformation *BInfor;
 	BInfor = BusInformation ();
 	BInfor ->ViewDetails();
-            BInfor ->AddDetails();
-            BInfor ->UpdateDetails();
-            BInfor ->DeleteDetails();
-               BusSchedule *BS;
+  BInfor ->AddDetails();
+  BInfor ->UpdateDetails();
+  BInfor ->DeleteDetails();
+       
+  BusSchedule *BS;
 	BS = BusSchedule ();
 	BS ->ViewDetails();
-            BS ->AddDetails();
-            BS ->UpdateDetails();
-            BS ->DeleteDetails();	
+  BS ->AddDetails();
+  BS ->UpdateDetails();
+  BS ->DeleteDetails();	
 
-            Comment*cmnt;
+  Comment*cmnt;
 	cmnt =  new Comment();
 	cmnt -> ViewComment();
-            cmnt -> AddComment();
+  cmnt -> AddComment();
 
 	Payment*Pay;
 	Pay = new Payment();
@@ -52,6 +54,9 @@ int main()
 	Ticket*Tckt;
 	Tckt = new Ticket ();
 	Tckt ->ViewTicket ();
-delete UnRegCustomer, RegCustomer, BInfo, BS, cmnt, Pay, Stf, Tckt ;
-return 0;                        }
+
+  delete UnRegCustomer, RegCustomer, BInfo, BS, cmnt, Pay, Stf, Tckt ;
+
+  return 0;                        
+  }
 
